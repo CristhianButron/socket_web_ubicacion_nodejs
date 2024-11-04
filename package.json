@@ -1,0 +1,17 @@
+{
+  "name": "socket_web_ubicacion_nodejs",
+  "version": "1.0.0",
+  "description": "es una aplicacion web backend en node js para saber la ubicacion en tiempo real de la persona conectada",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.21.1",
+    "socket.io": "4.8.1"
+  }
+}
