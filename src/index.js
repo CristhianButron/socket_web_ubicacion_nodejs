@@ -18,6 +18,12 @@ app.set('view engine', 'ejs');
 // routes
 app.use(require('./routes'));
 
+// new route to get latest coordinates
+app.get('/latest-coordinates', (req, res) => {
+  const latestCoords = require('./sockets').getLatestCoords();
+  res.json(latestCoords);
+});
+
 // sockets
 require('./sockets')(io);
 
